@@ -11,42 +11,169 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">Zachary Goldberg</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-              
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                      <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Experience</a>
+                            <a class="nav-link" href="#experience">Experience</a>
+                          </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="#education" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Education
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Eleven Fifty</a>
+                        <a class="dropdown-item" href="#elevenfifty">Eleven Fifty</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Wabash College</a>
+                        <a class="dropdown-item" href="#wabash">Wabash College</a>
                       </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Contact</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link " href="#">Disabled</a>
                     </li> -->
-                  </ul>
+                  <!-- </ul> -->
                   <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form> -->
                 </div>
-              </nav>  
+    </nav>
+    <!-- Contact/Center Picture-->
+    <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+          
+              <!-- Modal content-->
+              <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Me!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                    <div class="modal-body">
+                            <form method="POST" action="https://formspree.io/zackigoldberg@gmail.com"></form>
+                                    <div class="form-group">
+                                      <label for="your-Name" class="col-form-label">Name:</label>
+                                      <input type= "name" name="name" Id="your-Name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="your-Phone-Number" class="col-form-label">Phone Number:</label>
+                                      <input type= "phone" name="phone" id="Your-Phone-Number">
+                                    </div> 
+                                    <div class="form-group">
+                                            <label for="your-E-Mail" class="col-form-label">E-mail:</label>
+                                            <input type="email" name="email" id="your-E-Mail">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="message" class="col-form-label">Message:</label>
+                                            <textarea name="message" id="message"></textarea>
+                                        </div>
+                                        <button type="submit" class="close">Get in Touch</button>
+                                  </form>
+                                </div>
+                            </form>
+                        
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+          </div>
+            </div>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
+<div class = "container">
+    <!-- Projects -->
+    <div class="row">
+        <div class="col-md-6">
+                <a id="projectsImage" class="unhidden" href="javascript:unhide('projects','projectsImage')"><img src="assets\img\Code Full Size.jpg" alt="Projects"></a>
+            <section id="projects" class="hidden">
+                <div class="hoverAnimation">
+                <h2>Projects</h2>
+                <a href="#">Animated Penguin</a>
+                    <p>My first project</p>
+                    <p>Languages: Html & CSS</p>
+                <a href="#">Corporate Picnic Expense Tracker</a>
+                    <p>An expense tracker that which can provide totals for picnic costs as well as overall expenditures</p>
+                    <p>Languages: C#</p>
+                <a href="#">inVent: Bakery Inventory Tracking</a>
+                    <p>Inventory tracking MVC utitlizing tiered user roles.</p>
+                    <p>Languages: ASP.NET, C#, Razor, CSS, Html, Javascript</p>
+                </div>
+            </section> 
+        </div>
+
+    <!-- Employment -->
+        <div class="col-md-6">
+                <a id="employmentImage" class="unhidden" href="javascript:unhide('employment','employmentImage')"><img src="assets\img\WorkingTemp-FullSize.jpg" alt="Employment"></a>
+            <section id="employment" class="hidden">
+                <div class="hoverAnimation" >
+                <h2>Employment</h2>
+                <h3>Account Manager</h3>					
+                <h4>Uncommon Coffee Roasters, Douglas, MI					     July 2014-October 2018</h4>
+                    <ul>
+                        <li>Run equipment program. Source, purchase, and inventory La Marzocco, Bunn-o-matic, and other brands of coffee brewing and grinding equipment.</li>
+                        <li>Implement successful new products. Design, source components, and create new product offerings utilizing multiple different vendors.</li>
+                        <li>Consult for turnkey coffee shop setups. Bring in and execute five-figure deals to set up new roaster client’s operations with machine specs, layout, SOPs, installation, and barista training.</li>
+                        <li>Manage & grow happy customer base. Manage 200+ wholesale accounts adding 40 new customers over the last two years.</li>
+                        <li>Barista and management training. Train 200+ different baristas, managers, and owners in essential job duties, including product knowledge, customer service, machine operations, inventory, and management training.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Education -->
+    <div class="row">
+            <div class="col-md-6">
+                    <a id="educationImage" class="unhidden" href="javascript:unhide('education','educationImage')"><img src="assets\img\Library-fullsize.jpg"/></a>
+                <section id="education" class="hidden">
+                    <div class="hoverAnimation" >
+                    <h2>Education</h2>
+                        <h3>Eleven-Fifty Academy</h3>					
+                        <h4>.Net Development Program				     October 2018-Present</h4>
+                            <ul>
+                                <li>Double Major: Music and History</li>
+                                <li>GPA: 3.32/4.0</li>
+                            </ul>
+                        <h3>Wabash College</h3>					
+                        <h4>Bachelor of Arts					     August 2010 - June 2014</h4>
+                            <ul>
+                                <li>Double Major: Music and History</li>
+                                <li>GPA: 3.32/4.0</li>
+                            </ul>
+                        </div>
+                </section>
+            </div>
+
+    <!-- About -->
+            <div class="col-md-6">
+                    <a id="aboutImage" class="unhidden" href="javascript:unhide('about','aboutImage')"><img src="assets\img\PenguinCrossing-FullSize.jpg"/></a>
+                <section id="about" class="hidden"> 
+                        <div class="hoverAnimation">
+                    <h2>About me</h2>
+                    <p>I'm a 26 year-old man from Illinois, who went to Wabash college in Crawfordsville, Indiana, and then moved to Douglas, Michigan for work. I wasn't happy working in Coffee, it wasn't my dream job, so I quit my job, sold my house, and moved to Indianapolis in October 2018 to learn about coding.</p>
+                    <p>Experience is relative, my coding journey has only just begun but in only a </p>
+                    <p>If you had asked me at this time last year what I wanted to do in five years I couldn't have given you a good answer, I was stuck. Now after taking the time to learn more about coding, I can safely say there is no other career for me.</p>
+                        </div>
+                </section>
+            </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer>
+        
+    </footer>     
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
