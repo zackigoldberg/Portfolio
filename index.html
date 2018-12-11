@@ -11,50 +11,15 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Zachary Goldberg</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                          </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#education" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Education
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#elevenfifty">Eleven Fifty</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#wabash">Wabash College</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Contact</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link " href="#">Disabled</a>
-                    </li> -->
-                  <!-- </ul> -->
-                  <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form> -->
-                </div>
-    </nav>
+    <div class="jumbotron">
+        <h1>Zachary Goldberg</h1>
+        <a href="#">Download my Resume</a>
+        <br>
+        <a href="#myModal" data-toggle="modal">Contact Me</a>
+    </div>
     <!-- Contact/Center Picture-->
     <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
-          
               <!-- Modal content-->
               <div class="modal-content">
                     <div class="modal-header">
@@ -65,18 +30,22 @@
                             <form method="POST" action="https://formspree.io/zackigoldberg@gmail.com"></form>
                                     <div class="form-group">
                                       <label for="your-Name" class="col-form-label">Name:</label>
+                                      <br>
                                       <input type= "name" name="name" Id="your-Name">
                                     </div>
                                     <div class="form-group">
                                       <label for="your-Phone-Number" class="col-form-label">Phone Number:</label>
+                                        <br>
                                       <input type= "phone" name="phone" id="Your-Phone-Number">
                                     </div> 
                                     <div class="form-group">
                                             <label for="your-E-Mail" class="col-form-label">E-mail:</label>
+                                            <br>
                                             <input type="email" name="email" id="your-E-Mail">
                                     </div>
                                     <div class="form-group">
                                             <label for="message" class="col-form-label">Message:</label>
+                                            <br>
                                             <textarea name="message" id="message"></textarea>
                                         </div>
                                         <button type="submit" class="close">Get in Touch</button>
@@ -90,14 +59,18 @@
               </div>
           </div>
             </div>
-    
+
 <div class = "container">
     <!-- Projects -->
     <div class="row">
         <div class="col-md-6">
-                <a id="projectsImage" class="unhidden" href="javascript:unhide('projects','projectsImage')"><img src="assets\img\Code Full Size.jpg" alt="Projects"></a>
-            <section id="projects" class="hidden">
-                <div class="hoverAnimation">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2 class="title">Projects</h2>
+                    <img src="./assets/img/Code Full Size.jpg" alt="Projects">
+                  </div>
+                  <div class="flip-card-back">
                 <h2>Projects</h2>
                 <a href="#">Animated Penguin</a>
                     <p>My first project</p>
@@ -109,14 +82,20 @@
                     <p>Inventory tracking MVC utitlizing tiered user roles.</p>
                     <p>Languages: ASP.NET, C#, Razor, CSS, Html, Javascript</p>
                 </div>
-            </section> 
+            </div>
+          </div>
         </div>
-
+   
+         
     <!-- Employment -->
-        <div class="col-md-6">
-                <a id="employmentImage" class="unhidden" href="javascript:unhide('employment','employmentImage')"><img src="assets\img\WorkingTemp-FullSize.jpg" alt="Employment"></a>
-            <section id="employment" class="hidden">
-                <div class="hoverAnimation" >
+    <div class="col-md-6">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                        <h2 class="title">Employment</h2>
+                        <img src="./assets/img/WorkingTemp-FullSize.jpg" alt="Employment">
+                  </div>
+                <div class="flip-card-back">
                 <h2>Employment</h2>
                 <h3>Account Manager</h3>					
                 <h4>Uncommon Coffee Roasters, Douglas, MI					     July 2014-October 2018</h4>
@@ -128,46 +107,56 @@
                         <li>Barista and management training. Train 200+ different baristas, managers, and owners in essential job duties, including product knowledge, customer service, machine operations, inventory, and management training.</li>
                     </ul>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
+</div>
     <!-- Education -->
     <div class="row">
             <div class="col-md-6">
-                    <a id="educationImage" class="unhidden" href="javascript:unhide('education','educationImage')"><img src="assets\img\Library-fullsize.jpg"/></a>
-                <section id="education" class="hidden">
-                    <div class="hoverAnimation" >
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                        <h2 class="title">Education</h2>
+                            <img src="./assets/img/Library-fullsize.jpg" alt="Education">
+                          </div>
+                          <div class="flip-card-back right">
                     <h2>Education</h2>
-                        <h3>Eleven-Fifty Academy</h3>					
-                        <h4>.Net Development Program				     October 2018-Present</h4>
+                        <h4>Eleven-Fifty Academy</h4>					
+                        <h5>.Net Development Program				     October 2018-Present</h5>
                             <ul>
                                 <li>Double Major: Music and History</li>
                                 <li>GPA: 3.32/4.0</li>
                             </ul>
                         <h3>Wabash College</h3>					
-                        <h4>Bachelor of Arts					     August 2010 - June 2014</h4>
+                        <h5>Bachelor of Arts					     August 2010 - June 2014</h5>
                             <ul>
                                 <li>Double Major: Music and History</li>
                                 <li>GPA: 3.32/4.0</li>
                             </ul>
                         </div>
-                </section>
+                    </div>
+                </div>
             </div>
 
     <!-- About -->
-            <div class="col-md-6">
-                    <a id="aboutImage" class="unhidden" href="javascript:unhide('about','aboutImage')"><img src="assets\img\PenguinCrossing-FullSize.jpg"/></a>
-                <section id="about" class="hidden"> 
-                        <div class="hoverAnimation">
+    <div class="col-md-6">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2 class="title">About Me</h2>
+                    <img src="./assets/img/PenguinCrossing-FullSize.jpg" alt="About">
+                  </div>
+                  <div class="flip-card-back">
                     <h2>About me</h2>
                     <p>I'm a 26 year-old man from Illinois, who went to Wabash college in Crawfordsville, Indiana, and then moved to Douglas, Michigan for work. I wasn't happy working in Coffee, it wasn't my dream job, so I quit my job, sold my house, and moved to Indianapolis in October 2018 to learn about coding.</p>
                     <p>Experience is relative, my coding journey has only just begun but in only a </p>
                     <p>If you had asked me at this time last year what I wanted to do in five years I couldn't have given you a good answer, I was stuck. Now after taking the time to learn more about coding, I can safely say there is no other career for me.</p>
                         </div>
-                </section>
+                    </div>
+                </div>
             </div>
-    </div>
-</div>
+        </div>
     <!-- Footer -->
     <footer>
         

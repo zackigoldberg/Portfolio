@@ -1,0 +1,5 @@
+.right {
+    text-align: left;
+    display: inline-block;
+    font: var(--font2);
+}
