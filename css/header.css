@@ -1,0 +1,8 @@
+@media (min-width: 756px){
+    .jumbotron{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+
+    }
+}
