@@ -1,8 +1,6 @@
-@media (min-width: 756px){
-    .jumbotron{
-        position: absolute;
-        top: 0%;
-        left: 50%;
-
-    }
+#nametag {
+    background: url(''),;
+    font: var(--font1), var(--font2), sans-serif;
+    text-align: center;
+    color:white;
 }
