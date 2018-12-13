@@ -2,4 +2,15 @@
     font: var(--font1), var(--font2), sans-serif;
     text-align: center;
     color:white;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--blue);
+}
+
+.font {
+    color: white;
+    font: lato;
+}
+#nametag a:hover {
+    color:white;
 }

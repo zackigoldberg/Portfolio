@@ -6,6 +6,6 @@
     --yellow: #DFA00C;	
     --dark-yellow: #B37E01;
 
-    --font-one: Lato, san-serif;
-    --font-two: Roboto, san-serif;
+    --font-one: url(https://fonts.googleapis.com/css?family=Lato)
+    --font-two: url(https://fonts.googleapis.com/css?family=Roboto)
 }
