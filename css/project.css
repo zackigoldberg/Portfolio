@@ -2,3 +2,13 @@
  width:475px;
  height:500px;
 }
+
+.carouselStyle {
+    width: 67%;
+    padding: 10px;
+    background: var(--blue);
+    border-radius: 20px;
+}
+.carouselStyle a{
+    color: white;
+}
