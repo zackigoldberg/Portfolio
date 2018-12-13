@@ -9,7 +9,7 @@
 
 .font {
     color: white;
-    font: lato;
+    font: url(https://fonts.googleapis.com/css?family=Lato)
 }
 #nametag a:hover {
     color:white;
