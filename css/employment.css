@@ -1,3 +1,6 @@
-li{
-    padding: 2px;
+
+@media (max-width:360) {
+    #employment li{
+        font-size: xx-small;
+    }
 }

@@ -1,12 +1,26 @@
 #nametag {
     font: var(--font1), var(--font2), sans-serif;
-    text-align: center;
+    width:100%;
+    text-align:center;
     color:white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     background: var(--blue);
 }
+@media (max-width: 860px) {
+    #nametag {
+        margin-left: 105px;
+      margin-right:-40px;
+    } 
+}
+      @media (max-width: 360px) {
+    #nametag {
+        margin-left:68px;
+      margin-right:-50px;
+    } 
+}
 
+    
 .font {
     color: white;
     font: url(https://fonts.googleapis.com/css?family=Lato)
