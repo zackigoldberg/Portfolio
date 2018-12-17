@@ -95,3 +95,22 @@ section{
   width:300px;
   height:400px;
 }
+
+h1 {
+  font-family: 'Old Standard TT', serif;
+} 
+h2 {
+font-family: 'Old Standard TT', serif;
+}
+h3 {
+  font-family: 'Old Standard TT', serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+ul {
+  font-family: 'Lato', sans-serif;
+}
+h5{
+  font-family: 'Lato', sans-serif;
+}
