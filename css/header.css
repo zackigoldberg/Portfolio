@@ -28,3 +28,15 @@
 #nametag a:hover {
     color:white;
 }
+
+.icons {
+text-align: center;
+display: center;
+  border-radius: 30px;
+}
+
+.social {
+  border-radius: 50px;
+  padding: 5px;
+  margin: 5px;
+}
