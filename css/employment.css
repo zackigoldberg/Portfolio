@@ -1,6 +1,8 @@
-
+#employment li{
+font-size: 8px;
+}
 @media (max-width:360) {
     #employment li{
-        font-size: xx-small;
+        font-size: .2em;
     }
 }
